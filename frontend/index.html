@@ -28,5 +28,8 @@
     <form id="form" action="">
         <input id="input" autocomplete="off" /><button>SEND</button>
     </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <!--io() defaults to trying to connect to the host that serves the page-->
+    <script>var socket = io()</script>
 </body>
 </html>
