@@ -1,0 +1,19 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A realtime chatroom created using Socket.IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgegosden/chat.io.git"
+  },
+  "author": "George Gosden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgegosden/chat.io/issues"
+  },
+  "homepage": "https://github.com/georgegosden/chat.io#readme"
+}
