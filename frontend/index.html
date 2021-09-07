@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    
+            <p id="userP">Enter a username</p>
+            <form id="usernameForm" action="">
+                <input id="usernameInput" autocomplete="off"/><button>go</button>
+            </form>  
     <ul id="messages"></ul>
     <form id="form" action="">
-        <input id="input" autocomplete="off" /><button>SEND</button>
+        <input id="input" autocomplete="off" /><button id="usernameBtn">SEND</button>
     </form>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>

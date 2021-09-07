@@ -13,16 +13,15 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 
 //socket-watch
 io.on("connection", (socket) =>{
-    var connectionMsg = "user connected";
-    var disconnectMsg = "user disconnected";
-    var address = socket.request.connection.remoteAddress;
-
+    var connectionMsg = "connected";
+    var disconnectMsg = "disconnected";
+    console.log(socket.id);
     io.emit('connection', connectionMsg)
-    console.log("a user connected" + address);
+    console.log("a user connected");
     
     socket.on("disconnect", () =>{
         io.emit('connection', disconnectMsg);
-        console.log("user disconnected");
+        console.log("disconnected");
     });
 });
 
@@ -35,5 +34,5 @@ io.on('connection', (socket) =>{
 });
 
 server.listen(3000, () =>{
-    console.log("listening on *:3000")
+    console.log("http://localhost:3000")
 });
